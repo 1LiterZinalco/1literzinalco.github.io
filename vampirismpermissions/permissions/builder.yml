@@ -1,0 +1,8 @@
+name: builder
+permissions:
+- nucleus.gamemode.base
+- worldedit.*
+- weight.80
+prefixes:
+- '&7[&2Builder&7]&r':
+    priority: 30

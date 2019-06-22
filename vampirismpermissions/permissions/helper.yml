@@ -1,0 +1,29 @@
+name: helper
+permissions:
+- nucleus.checkmute.base
+- nucleus.checkmuted.base
+- nucleus.checknotes.base
+- nucleus.checkwarnings.base
+- nucleus.helpop.receive
+- nucleus.ignore.exempt.chat
+- nucleus.mute.base
+- nucleus.mute.notify
+- nucleus.mute.unmute
+- nucleus.note.base
+- nucleus.note.notify
+- nucleus.note.showonlogin
+- nucleus.staffchat.base
+- nucleus.seen.base
+- nucleus.warn.base
+- nucleus.warn.notify
+- nucleus.warn.showonlogin
+- minecraft.command.tp
+- weight.40
+parents:
+- default
+prefixes:
+- '&7[&aHelper&7]&r':
+    priority: 40
+meta:
+- nucleus.socialspy.level:
+    value: '40'

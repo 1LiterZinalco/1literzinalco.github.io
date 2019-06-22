@@ -1,0 +1,24 @@
+name: head-mod
+permissions:
+- nucleus.kick.exempt.target
+- nucleus.ban.exempt.target
+- nucleus.tempban.exempt.target
+- nucleus.ban.base
+- nucleus.ban.offline
+- nucleus.invsee.modify
+- nucleus.kickall.base
+- nucleus.nameban.base
+- nucleus.nameban.unban.base
+- nucleus.removenote.base
+- nucleus.removewarning.base
+- nucleus.unban.base
+- griefprevention.admin
+- weight.70
+parents:
+- moderator
+prefixes:
+- '&7[&6Head-Mod&7]&r':
+    priority: 70
+meta:
+- nucleus.socialspy.level:
+    value: '70'

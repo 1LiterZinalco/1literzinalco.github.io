@@ -1,0 +1,6 @@
+name: hunter
+permissions:
+- weight.200
+meta:
+- namecolor:
+    value: '9'

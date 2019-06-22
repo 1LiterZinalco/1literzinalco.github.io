@@ -1,0 +1,6 @@
+name: vampire
+permissions:
+- weight.200
+meta:
+- namecolor:
+    value: '5'

@@ -1,0 +1,22 @@
+name: moderator
+permissions:
+- nucleus.sign.formatting
+- nucleus.back.base
+- nucleus.back.targets.*
+- nucleus.gamemode.base
+- nucleus.gamemode.modes.spectator
+- nucleus.gamemode.modes.survival
+- nucleus.getfromip.base
+- nucleus.seen.extended.*
+- nucleus.tempban.base
+- nucleus.tempban.offline
+- nucleus.ban.notify
+- nucleus.thru.base
+- nucleus.vanish.base
+- weight.60
+prefixes:
+- '&7[&eMod&7]&r':
+    priority: 60
+meta:
+- nucleus.socialspy.level:
+    value: '60'

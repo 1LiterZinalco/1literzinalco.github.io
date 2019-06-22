@@ -1,0 +1,48 @@
+name: head-admin
+permissions:
+- teslacrate.*
+- nucleus.commandspy.exempt.cooldown
+- nucleus.commandspy.exempt.cost
+- nucleus.commandspy.exempt.target
+- nucleus.commandspy.exempt.warmup
+- nucleus.globalmute.voice.auto
+- nucleus.globalmute.voice.base
+- nucleus.globalmute.voice.notify
+- nucleus.kickall.whitelist
+- nucleus.kill.base
+- nucleus.kill.exempt.cooldown
+- nucleus.kill.exempt.cost
+- nucleus.kill.exempt.warmup
+- nucleus.killentity.base
+- nucleus.killentity.exempt.cooldown
+- nucleus.killentity.exempt.cost
+- nucleus.killentity.exempt.warmup
+- nucleus.nucleus.base
+- nucleus.nucleus.clearcache.base
+- nucleus.nucleus.debug.base
+- nucleus.nucleus.debug.exempt.cooldown
+- nucleus.nucleus.debug.exempt.cost
+- nucleus.nucleus.debug.exempt.warmup
+- nucleus.nucleus.debug.getuuids.base
+- nucleus.nucleus.debug.refreshuniquevisitors.base
+- nucleus.nucleus.debug.setsession.base
+- nucleus.nucleus.debug.setsession.exempt.cooldown
+- nucleus.nucleus.debug.setsession.exempt.cost
+- nucleus.nucleus.debug.setsession.exempt.warmup
+- nucleus.nucleus.itemalias.base
+- nucleus.nucleus.itemalias.clear.base
+- nucleus.nucleus.itemalias.remove.base
+- nucleus.nucleus.itemalias.set.base
+- nucleus.nucleus.printperms.base
+- nucleus.nucleus.reload.base
+- nucleus.nucleus.save.base
+- nucleus.stop.base
+- nucleus.sudo.base
+- nucleus.sudo.exempt.target
+- weight.90
+prefixes:
+- '&7[&cHead-Admin&7]&r':
+    priority: 90
+meta:
+- nucleus.socialspy.level:
+    value: '90'

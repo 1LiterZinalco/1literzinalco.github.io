@@ -1,0 +1,20 @@
+name: trial-mod
+permissions:
+- nucleus.chat.*
+- nucleus.mute.exempt.target
+- nucleus.warn.exempt.target
+- nucleus.checkban.base
+- nucleus.home.other.base
+- nucleus.invsee.base
+- nucleus.invsee.offline
+- nucleus.kick.base
+- nucleus.kick.notify
+- nucleus.socialspy.base
+- nucleus.spawn.other.base
+- weight.50
+prefixes:
+- '&7[&2Trial-Mod&7]&r':
+    priority: 50
+meta:
+- nucleus.socialspy.level:
+    value: '50'
