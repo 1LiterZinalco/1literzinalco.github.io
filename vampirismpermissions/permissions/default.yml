@@ -33,7 +33,6 @@ permissions:
 - nucleus.warp.list.base
 - griefprevention.user
 - totaleconomy.command.balance
-- totaleconomy.command.balancetop
 - totaleconomy.command.pay
 - vampirism.bind-action
 - vampirism.changelog

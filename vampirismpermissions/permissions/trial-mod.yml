@@ -11,6 +11,7 @@ permissions:
 - nucleus.kick.notify
 - nucleus.socialspy.base
 - nucleus.spawn.other.base
+- totaleconomy.command.balancetop
 - weight.50
 prefixes:
 - '&7[&2Trial-Mod&7]&r':
