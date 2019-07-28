@@ -42,7 +42,7 @@ The rank's permissions continue to build. The higher ranks have all the perms of
 
 # Permissions
 
-Arguments written in [ ] are needed always, { } is needed sometimes and >< is optional.
+Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is optional.
 
 ## Default (Member)
 **Task:** Have fun, don't break rules.
@@ -54,9 +54,9 @@ Arguments written in [ ] are needed always, { } is needed sometimes and >< is op
 | /firstspawn                           | Teleports to the new player spawn point. | nucleus.firstspawn.base |
 | /getpos                               | Gets the location of the executing player. | nucleus.getpos.base |
 | /helpop [message]                     | Sends a [message] to all available staff. | nucleus.helpop.base |
-| /home {name},<br>/deletehome {name}   | A home is a personal warp. The standard {name} is 'home'. /home {name} teleports to the home called {name}.<br>/deletehome {name} deletes the home called {name}. | nucleus.home.base |
+| /home [{name}],<br>/deletehome [{name}]| A home is a personal warp. The standard [{name}] is 'home'. /home [{name}] teleports to the home called [{name}].<br>/deletehome [{name}] deletes the home called [{name}]. | nucleus.home.base |
 | /homes                                | Lists all homes of the executing player. | nucleus.home.list.base |
-| /sethome {name}                       | Sets a new home called {name}. The standard {name} is 'home'. | nucleus.home.set.base |
+| /sethome [{name}]                     | Sets a new home called [{name}]. The standard [{name}] is 'home'. | nucleus.home.set.base |
 | /ignore [user]                        | Toggles ignoring [user]'s messages. | nucleus.ignore.base |
 | /ignorelist                           | Displays all ignored users. | nucleus.ignorelist.base |
 | /info                                 | Displays server information. | nucleus.info.base |
@@ -101,12 +101,12 @@ Arguments written in [ ] are needed always, { } is needed sometimes and >< is op
 | /checknotes [user]                                                 | Displays a list of [user]'s notes. | nucleus.checknotes.base |
 | /checkwarnings [user]                                              | Displays a list of [user]'s warnings. | nucleus.checkwarnings.base |
 | /helpop                                                            | Receives messages sent to all available staff. | nucleus.helpop.receive |
-| /mute [user] >duration< [reason],<br>/unmute [user]                | Mutes [user] for >duration< because of [reason]. The >duration< could be "1H" for one hour, "2D" for two days, etc.<br>Unmutes [user]. | nucleus.mute.base,<br>*nucleus.mute.notify*,<br>nucleus.mute.unmute |
+| /mute [user] {duration} [reason],<br>/unmute [user]                | Mutes [user] for {duration} because of [reason]. The {duration} could be "1h" for one hour, "2d" for two days, etc.<br>Unmutes [user]. | nucleus.mute.base,<br>*nucleus.mute.notify*,<br>nucleus.mute.unmute |
 | /note [user] [text]                                                | Adds a note with [text] to [user] which is readable by all staff. | nucleus.note.base,<br>*nucleus.note.notify*,<br>*nucleus.note.showonlogin* |
 | /sc [message]                                                      | Sends [message] to the *currently broken* staff chat. | nucleus.staffchat.base |
 | /seen [user]                                                       | Displays information about [user], such as last seen playing, etc. | nucleus.seen.base |
 | /teleport [user],<br>/teleport [user1] [user2],<br>/teleport [xyz] | Teleports the executing player to [user], [user1] to [user2] or the executing player to [xyz]. | minecraft.command.tp |
-| /warn [user] >duration< [reason]                                   | Warns [user] for >duration< because of [reason]. The >duration< could be "7D" for one week, or left blank for unlimited. | nucleus.warn.base,<br>*nucleus.warn.notify*,<br>*nucleus.warn.showonlogin* |
+| /warn [user] {duration} [reason]                                   | Warns [user] for {duration} because of [reason]. The {duration} could be "7d" for one week, or left blank for unlimited. | nucleus.warn.base,<br>*nucleus.warn.notify*,<br>*nucleus.warn.showonlogin* |
 |                                                                    | | weight.40 |
 
 ## Trial-Mod
@@ -118,11 +118,11 @@ Arguments written in [ ] are needed always, { } is needed sometimes and >< is op
 |                          | Trial-Mod+ can't be muted. | nucleus.mute.exempt.target |
 |                          | Trial-Mod+ can't be warned. | nucleus.warn.exempt.target |
 | /checkban [user]         | Checks if [user] is banned. | nucleus.checkban.base |
-| /homeother [user] {name} | Teleports to [user]'s home called {name}. | nucleus.home.other.base |
+| /homeother [user] [name] | Teleports to [user]'s home called [name]. | nucleus.home.other.base |
 | /invsee [user]           | Displays [user]'s inventory. | nucleus.invsee.base,<br>*nucleus.invsee.offline* |
-| /kick [user] >reason<    | Kicks [user] because of >reason< from the server. | nucleus.kick.base,<br>*nucleus.kick.notify* |
+| /kick [user] {reason}    | Kicks [user] because of {reason} from the server. | nucleus.kick.base,<br>*nucleus.kick.notify* |
 | /socialspy               | Toggles whether private conversations of other users shall be displayed. | nucleus.socialspy.base |
-| /spawn [user]            | Teleports [user] to the world's spawn point. | nucleus.spawn.other.base |
+| /spawn other [user]      | Teleports [user] to the world's spawn point. | nucleus.spawn.other.base |
 | /baltop                  | Displays top ten richest players. Causes server-wide lag - use with caution. | totaleconomy.command.balancetop |
 |                          | | weight.50 |
 
@@ -136,7 +136,7 @@ Arguments written in [ ] are needed always, { } is needed sometimes and >< is op
 | /gamemode 0,<br>/gamemode 3         | Changes the executing player's gamemode. | nucleus.gamemode.base,<br>*nucleus.gamemode.modes.spectator*,<br>*nucleus.gamemode.modes.survival* |
 | /getfromip [ip]                     | Lists all known players ever connected via [ip]. | nucleus.getfromip.base |
 | */seen [user]*                      | Displays information about [user], such as last seen playing, etc. Grants Mod+ even more information. | nucleus.seen.extended.* |
-| /tempban [user] [duration] [reason] | Bans [user] for [duration] because of [reason]. The [duration] could be "1H" for one hour, "2D" for two days, etc. | nucleus.tempban.base,<br>*nucleus.tempban.offline*,<br>*nucleus.ban.notify* |
+| /tempban [user] [duration] [reason] | Bans [user] for [duration] because of [reason]. The [duration] could be "1h" for one hour, "2d" for two days, etc. | nucleus.tempban.base,<br>*nucleus.tempban.offline*,<br>*nucleus.ban.notify* |
 | /thru                               | Teleports the executing player through a wall. Useful for /vanish. | nucleus.thru.base |
 | /vanish                             | Toggles whether the executing player is visible to other players. | nucleus.vanish.base |
 |                                     | | weight.60 |
@@ -148,11 +148,11 @@ Arguments written in [ ] are needed always, { } is needed sometimes and >< is op
 | :--------------------------------------------- | :------------- | :------------- |
 |                                                | Head-Mod+ can't be kicked. | nucleus.kick.exempt.target |
 |                                                | Head-Mod+ can't be banned. | nucleus.ban.exempt.target,<br>*nucleus.tempban.exempt.target* |
-|                                                | Grants the user to use Griefprevention's admin features. | griefprevention.admin |  
+|                                                | Grants the user to use Griefprevention's admin features. | griefprevention.admin |
 | /ban [user] [reason]                           | Bans [user] because of [reason]. | nucleus.ban.base,<br>*nucleus.ban.offline* |
 | /invsee [user]                                 | Displays and allows modification of [user]'s inventory. | nucleus.invsee.modify |
-| /kickall [reason]                              | Kicks all users because of [reason] from the server. | nucleus.kickall.base |
-| /nameban [name] >reason<,<br>/nameunban [name] | Bans all users with [name] in their or as their username for >reason<.<br>Unbans all users with [name] in their or as their username. | nucleus.nameban.base,<br>nucleus.nameban.unban.base |
+| /kickall {reason}                              | Kicks all users because of {reason} from the server. | nucleus.kickall.base |
+| /nameban [name] {reason},<br>/nameunban [name] | Bans all users with [name] in their or as their username for {reason}.<br>Unbans all users with [name] in their or as their username. | nucleus.nameban.base,<br>nucleus.nameban.unban.base |
 | /removenote [user] [id]                        | Removes the note with [id] from [user]. | nucleus.removenote.base |
 | /removewarning [user] [id]                     | Removes the warning with [id] from [user]. | nucleus.removewarning.base |
 | /unban [user]                                  | Unbans [user]. | nucleus.unban.base |
