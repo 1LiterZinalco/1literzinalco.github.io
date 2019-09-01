@@ -10,19 +10,23 @@ Based on the original document by Witchcrafter1<br>
 Organized, written down, and rephrased by ThugPug43<br>
 Then rewritten by 1LiterZinalco
 
+# A Brief Introduction
+- You need to remain calm, friendly, fair and objective at all times. Common sense, right?
+- The first stage is the Helper, a trial-phase. It lasts two weeks. If you misbehave or do *any-kind-of-shit* within this week, you'll be removed instantly. After the trial phase you're a "solid" Helper, aka. Sr.Helper. To reach the stage of a Trial-Mod, you just have to be active on the server and help other users. We'll notice.
+- If you're offline for a few days it won't be a reason for us to just remove you from staff, even while you're on any kind of trial. Of course, if it's like a week or a month without any further information we would probably remove you from staff and give you the option to reapply once you're able to commit more time. So, please announce in advance that you are going on vacation or missing out on other reasons.
+
 # Current Staff List
-*Updated 07/21/2019 (US date format)*
+*Updated 09/01/2019 (US date format)*
 
 | Rank                         | Ingame          | Discord              |
 | :--------------------------- | :-------------- | :------------------- |
 | Owner (Mod Developer)        | maxanier        | maxanier#1850        |
-| Sr. Admin (The God of Abuse) | Piklach         | Piklach#0001         |
-| Sr. Admin (Sir. Tech-Guy)    | 1LiterZinalco   | 1LiterZinalco#0001   |
-| Admin                        | BronzeShadow    | BronzeShadow#4610    |
+| Sr.Admin (The God of Abuse)  | Piklach         | Piklach#6929         |
+| Sr.Admin (Sir. Tech-Guy)     | 1LiterZinalco   | 1LiterZinalco#0001   |
 | *Admin (Former maintainer)*  | *WurstKorn*     | *WurstKorn#6773*     |
-| Head-Mod                     | ThugPug43       | ThugPug43#4730       |
+| Head-Mod                     | xXvPendragonvXx | xXvPendragonvXx#1255 |
+| Mod                          | ThugPug43       | ThugPug43#4730       |
 | Mod                          | Lighteven       | lighteven#5477       |
-| Trial-Mod                    | xXvPendragonvXx | xXvPendragonvXx#1255 |
 | Helper                       | Teri_Beri       | Teri_Berry#6815      |
 | Helper                       | XxTomasVxX      | Tomás Valle#1051     |
 | Helper                       | Kranzy          | Kranzy#1373          |
@@ -37,7 +41,8 @@ The rank's permissions continue to build. The higher ranks have all the perms of
 - Head-Mod (Exclusive to one person)
 - Moderator
 - Trial-Mod (Temporary rank to test if becoming a Moderator is a good idea)
-- Helper (Includes a two-week trial period)
+- Sr.Helper
+- Helper (A two-week trial period)
 - Default
 
 # Permissions
@@ -47,51 +52,70 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 ## Default (Member)
 **Task:** Have fun, don't break rules.
 
-| Command                               | Explanation    | Node           |
-| :------------------------------------ | :------------- | :------------- |
-|                                       | Grants the user to use Griefprevention's claim features. | griefprevention.user |
-| /afk                                  | Toggles the player's AFK state. | nucleus.afk.base |
-| /firstspawn                           | Teleports to the new player spawn point. | nucleus.firstspawn.base |
-| /getpos                               | Gets the location of the executing player. | nucleus.getpos.base |
-| /helpop [message]                     | Sends a [message] to all available staff. | nucleus.helpop.base |
-| /home [{name}],<br>/deletehome [{name}]| A home is a personal warp. The standard [{name}] is 'home'. /home [{name}] teleports to the home called [{name}].<br>/deletehome [{name}] deletes the home called [{name}]. | nucleus.home.base |
-| /homes                                | Lists all homes of the executing player. | nucleus.home.list.base |
-| /sethome [{name}]                     | Sets a new home called [{name}]. The standard [{name}] is 'home'. | nucleus.home.set.base |
-| /ignore [user]                        | Toggles ignoring [user]'s messages. | nucleus.ignore.base |
-| /ignorelist                           | Displays all ignored users. | nucleus.ignorelist.base |
-| /info                                 | Displays server information. | nucleus.info.base |
-| /kit [name]                           | Redeems the kit called [name]. | nucleus.kit.base |
-| /kits                                 | Displays all available kits. | nucleus.kit.list.base |
-| /kit Claim                            | Redeems the "Claim" kit. | nucleus.kits.Claim |
-| /kit vamp_guide                       | Redeems the "vamp_guide" kit. | nucleus.kits.vamp_guide |
-| /kit Starter                          | Redeems the "Starter" kit. | nucleus.kits.Starter |
-| /list                                 | Lists all online players, exempt vanished. | nucleus.list.base |
-| /mail                                 | Retrieves mail that has been sent to the executing user. | nucleus.mail.base |
-| /mail clear                           | Clears the executing player's inbox. | nucleus.mail.base |
-| /mail send [user] [message]           | Sends [user] a mail with a [message]. | nucleus.mail.send.base |
-| /msg [user] [message]                 | Sends [user] a [message]. | nucleus.message.base |
-| /motd                                 | Displays the welcome message when joining the server. | nucleus.motd.base |
-| /rtp                                  | Teleports the executing player to a random destination. | nucleus.rtp.base |
-| /rules                                | Displays the server rules. | nucleus.rules.base |
-| /spawn                                | Warp to the world's spawn point. | nucleus.spawn.base |
-| /time                                 | Displays the current ingame time. | nucleus.time.base |
-| /tpa [user]                           | Sends a request to [user] to ask for the executing player to teleport to them. | nucleus.teleport.tpa.base |
-| /tpayes                               | Accepts a teleport request. | nucleus.teleport.tpaccept.base |
-| /tpahere [user]                       | Sends a request to [user] to ask them to teleport to the executing player. | nucleus.teleport.tpahere.base |
-| /tpno                                 | Denies a teleport request. | nucleus.teleport.tpdeny.base |
-| /tptoggle                             | Toggle whether teleport requests are received. | nucleus.teleport.tptoggle.base |
-| /warp [name]                          | Teleport to the warp point called [name]. | nucleus.warp.base |
-| /warps                                | Displays all available warp points. | nucleus.warp.list.base |
-| /bal                                  | Displays current money balance. | totaleconomy.command.balance |
-| /pay [user] [amount]                  | Pays [user] $[amount]. | totaleconomy.command.pay |
-| /vampirism bind-action [1/2] [action] | Binds [action] to [1/2]. [1/2] can be set in Minecraft's control settings. | vampirism.bind-action |
-| /vampirism changelog                  | Checks whether there is a new version available. | vampirism.changelog |
-| /vampirism eye [0-14]                 | Changes eye appearance to [0-14]. | vampirism.eye |
-| /vampirism fang [0-5]                 | Changes fang appearance to [0-5]. | vampirism.fang |
-|                                       | | weight.0 |
+| Command                                 | Explanation    | Node           |
+| :-------------------------------------- | :------------- | :------------- |
+|                                         | Grants the user to use Griefprevention's claim features. | griefprevention.user |
+| /afk                                    | Toggles the player's AFK state. | nucleus.afk.base |
+| /firstspawn                             | Teleports to the new player spawn point. | nucleus.firstspawn.base |
+| /getpos                                 | Gets the location of the executing player. | nucleus.getpos.base |
+| /helpop [message]                       | Sends a [message] to all available staff. | nucleus.helpop.base |
+| /home [{name}],<br>/deletehome [{name}] | A home is a personal warp. The standard [{name}] is 'home'. /home [{name}] teleports to the home called [{name}].<br>/deletehome [{name}] deletes the home called [{name}]. | nucleus.home.base |
+| /homes                                  | Lists all homes of the executing player. | nucleus.home.list.base |
+| /sethome [{name}]                       | Sets a new home called [{name}]. The standard [{name}] is 'home'. | nucleus.home.set.base |
+| /ignore [user]                          | Toggles ignoring [user]'s messages. | nucleus.ignore.base |
+| /ignorelist                             | Displays all ignored users. | nucleus.ignorelist.base |
+| /info                                   | Displays server information. | nucleus.info.base |
+| /kit [name]                             | Redeems the kit called [name]. | nucleus.kit.base |
+| /kits                                   | Displays all available kits. | nucleus.kit.list.base |
+| /kit Claim                              | Redeems the "Claim" kit. | nucleus.kits.Claim |
+| /kit vamp_guide                         | Redeems the "vamp_guide" kit. | nucleus.kits.vamp_guide |
+| /kit Starter                            | Redeems the "Starter" kit. | nucleus.kits.Starter |
+| /list                                   | Lists all online players, exempt vanished. | nucleus.list.base |
+| /mail                                   | Retrieves mail that has been sent to the executing user. | nucleus.mail.base |
+| /mail clear                             | Clears the executing player's inbox. | nucleus.mail.base |
+| /mail send [user] [message]             | Sends [user] a mail with a [message]. | nucleus.mail.send.base |
+| /msg [user] [message]                   | Sends [user] a [message]. | nucleus.message.base |
+| /motd                                   | Displays the welcome message when joining the server. | nucleus.motd.base |
+| /rtp                                    | Teleports the executing player to a random destination. | nucleus.rtp.base |
+| /rules                                  | Displays the server rules. | nucleus.rules.base |
+| /spawn                                  | Warp to the world's spawn point. | nucleus.spawn.base |
+| /time                                   | Displays the current ingame time. | nucleus.time.base |
+| /tpa [user]                             | Sends a request to [user] to ask for the executing player to teleport to them. | nucleus.teleport.tpa.base |
+| /tpayes                                 | Accepts a teleport request. | nucleus.teleport.tpaccept.base |
+| /tpahere [user]                         | Sends a request to [user] to ask them to teleport to the executing player. | nucleus.teleport.tpahere.base |
+| /tpno                                   | Denies a teleport request. | nucleus.teleport.tpdeny.base |
+| /tptoggle                               | Toggle whether teleport requests are received. | nucleus.teleport.tptoggle.base |
+| /warp [name]                            | Teleport to the warp point called [name]. | nucleus.warp.base |
+| /warps                                  | Displays all available warp points. | nucleus.warp.list.base |
+| /bal                                    | Displays current money balance. | totaleconomy.command.balance |
+| /pay [user] [amount]                    | Pays [user] $[amount]. | totaleconomy.command.pay |
+| /vampirism bind-action [1/2] [action]   | Binds [action] to [1/2]. [1/2] can be set in Minecraft's control settings. | vampirism.bind-action |
+| /vampirism changelog                    | Checks whether there is a new version available. | vampirism.changelog |
+| /vampirism eye [0-14]                   | Changes eye appearance to [0-14]. | vampirism.eye |
+| /vampirism fang [0-5]                   | Changes fang appearance to [0-5]. | vampirism.fang |
+|                                         | | weight.0 |
 
 ## Helper
-**Task:** Help people with the mod and the different plugins. Solve small problems. Manage chat. Report to Moderators+ if a bigger issue arises or someone has 3 or more warnings.
+**Task:** Help people with the mod and the different plugins. Solve small problems. Manage chat. Report to Sr.Helper+ if a bigger issue arises or someone has 3 or more warnings.
+
+| Command                                                            | Explanation    | Node           |
+| :----------------------------------------------------------------- | :------------- | :------------- |
+|                                                                    | Helper+ can't be ignored by users. | *nucleus.ignore.exempt.chat* |
+| /checkmute [user]                                                  | Checks if [user] is muted. | nucleus.checkmute.base |
+| /checkmuted                                                        | Displays a list of all muted players. | nucleus.checkmuted.base |
+| /checknotes [user]                                                 | Displays a list of [user]'s notes. | nucleus.checknotes.base |
+| /checkwarnings [user]                                              | Displays a list of [user]'s warnings. | nucleus.checkwarnings.base |
+| /helpop                                                            | Receives messages sent to all available staff. | nucleus.helpop.receive |
+| /mute [user] {duration} [reason],<br>/unmute [user]                | Mutes [user] for {duration} because of [reason]. The {duration} could be "1h" for one hour, "2d" for two days, etc.<br>Unmutes [user]. | nucleus.mute.base,<br>*nucleus.mute.notify*,<br>nucleus.mute.unmute |
+| /note [user] [text]                                                | Adds a note with [text] to [user] which is readable by all staff. | nucleus.note.base,<br>*nucleus.note.notify*,<br>*nucleus.note.showonlogin* |
+| /sc [message]                                                      | Sends [message] to the *currently broken* staff chat. | nucleus.staffchat.base |
+| /seen [user]                                                       | Displays information about [user], such as last seen playing, etc. | nucleus.seen.base |
+| /teleport [user],<br>/teleport [user1] [user2],<br>/teleport [xyz] | Teleports the executing player to [user], [user1] to [user2] or the executing player to [xyz]. | minecraft.command.tp |
+| /warn [user] {duration} [reason]                                   | Warns [user] for {duration} because of [reason]. The {duration} could be "7d" for one week, or left blank for unlimited. | nucleus.warn.base,<br>*nucleus.warn.notify*,<br>*nucleus.warn.showonlogin* |
+|                                                                    | | weight.40 |
+
+## Sr.Helper
+**Task:** Help people with the mod and the different plugins. Solve small problems and support Helpers. Manage chat. Report to Trial-Mod+ if a bigger issue arises or someone has 3 or more warnings.
 
 | Command                                                            | Explanation    | Node           |
 | :----------------------------------------------------------------- | :------------- | :------------- |
