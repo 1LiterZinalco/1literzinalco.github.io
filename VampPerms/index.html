@@ -16,7 +16,7 @@ Then rewritten by 1LiterZinalco
 - If you're offline for a few days it won't be a reason for us to just remove you from staff, even while you're on any kind of trial. Of course, if it's like a week or a month without any further information we would probably remove you from staff and give you the option to reapply once you're able to commit more time. So, please announce in advance that you are going on vacation or missing out on other reasons.
 
 # Current Staff List
-*Updated 29 January 2020*
+*Updated 25 February 2020*
 
 | Rank                         | Ingame          | Discord              | Discord UUID         |
 | :--------------------------- | :-------------- | :------------------- | :------------------- |
@@ -24,15 +24,16 @@ Then rewritten by 1LiterZinalco
 | Sr.Admin (Sir. Tech-Guy)     | 1LiterZinalco   | 1LiterZinalco#0001   | 267633670532104193   |
 | Sr.Admin (The God of Abuse)  | Piklach         | Piklach#6929         | 414852953191612417   |
 | *Admin (Former maintainer)*  | *WurstKorn*     | *WurstKorn#6773*     | 227086479355150336   |
-| Head-Mod                     | xXvPendragonvXx | xXvPendragonvXx#1255 | 270258305346043905   |
+| Admin                        | xXvPendragonvXx | xXvPendragonvXx#1255 | 270258305346043905   |
 | Mod                          | Kranzy          | Kranzy#1373          | 381387930616201216   |
-| Mod                          | XxTomasVxX      | Tomás Valle#1051     | 320569757529276417   |
 | Mod                          | Teri_Berry      | Teri_Berry#6815      | 647964618349608983   |
+| Mod                          | XxTomasVxX      | Tomás Valle#1051     | 320569757529276417   |
 | Helper                       | ElectricEvader  | ElectricEvader#3564  | 531969884964257793   |
+| Helper                       | Icyflame191     | IcyShadow191#3555    | 208761818263322624   |
 | Helper                       | ItsCorgi        | Corgi#3564           | 446771909724602368   |
 | Helper                       | JaberC          | JaberC#1020          | 406349178344701952   |
 | Helper                       | Pizzacat4       | Pizzacat4#0216       | 599344040051212298   |
-| Helper                       | S_olac          | S_olace#3014         | 306989884323790850   |
+| Helper                       | S_olace         | S_olace#3014         | 306989884323790850   |
 
 # Ranks
 The rank's permissions continue to build. The higher ranks have all the perms of lower ranks in addition to the ones specifically listed.
@@ -57,10 +58,14 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | Command                                 | Explanation    | Node           |
 | :-------------------------------------- | :------------- | :------------- |
 |                                         | Grants the user to use Griefprevention's claim features. | griefprevention.user |
+<!-- Deactiveated Commands
+
 | /afk                                    | Toggles the player's AFK state. | nucleus.afk.base |
+| /helpop [message]                       | Sends a [message] to all available staff. | nucleus.helpop.base |
+
+-->
 | /firstspawn                             | Teleports to the new player spawn point. | nucleus.firstspawn.base |
 | /getpos                                 | Gets the location of the executing player. | nucleus.getpos.base |
-| /helpop [message]                       | Sends a [message] to all available staff. | nucleus.helpop.base |
 | /home [{name}],<br>/deletehome [{name}] | A home is a personal warp. The standard [{name}] is 'home'. /home [{name}] teleports to the home called [{name}].<br>/deletehome [{name}] deletes the home called [{name}]. | nucleus.home.base |
 | /homes                                  | Lists all homes of the executing player. | nucleus.home.list.base |
 | /sethome [{name}]                       | Sets a new home called [{name}]. The standard [{name}] is 'home'. | nucleus.home.set.base |
@@ -69,16 +74,14 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /info                                   | Displays server information. | nucleus.info.base |
 | /kit [name]                             | Redeems the kit called [name]. | nucleus.kit.base |
 | /kits                                   | Displays all available kits. | nucleus.kit.list.base |
-| /kit Claim                              | Redeems the "Claim" kit. | nucleus.kits.Claim |
-| /kit vamp_guide                         | Redeems the "vamp_guide" kit. | nucleus.kits.vamp_guide |
-| /kit Starter                            | Redeems the "Starter" kit. | nucleus.kits.Starter |
+| /kit guide                         | Redeems the "vamp_guide" kit. | nucleus.kits.vamp_guide |
 | /list                                   | Lists all online players, exempt vanished. | nucleus.list.base |
 | /mail                                   | Retrieves mail that has been sent to the executing user. | nucleus.mail.base |
 | /mail clear                             | Clears the executing player's inbox. | nucleus.mail.base |
 | /mail send [user] [message]             | Sends [user] a mail with a [message]. | nucleus.mail.send.base |
 | /msg [user] [message]                   | Sends [user] a [message]. | nucleus.message.base |
 | /motd                                   | Displays the welcome message when joining the server. | nucleus.motd.base |
-| /rtp                                    | Teleports the executing player to a random destination. | nucleus.rtp.base |
+| /rtp *(cost $100)*                      | Teleports the executing player to a random destination. | nucleus.rtp.base |
 | /rules                                  | Displays the server rules. | nucleus.rules.base |
 | /spawn                                  | Warp to the world's spawn point. | nucleus.spawn.base |
 | /time                                   | Displays the current ingame time. | nucleus.time.base |
@@ -107,7 +110,6 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /checkmuted                                                        | Displays a list of all muted players. | nucleus.checkmuted.base |
 | /checknotes [user]                                                 | Displays a list of [user]'s notes. | nucleus.checknotes.base |
 | /checkwarnings [user]                                              | Displays a list of [user]'s warnings. | nucleus.checkwarnings.base |
-| /helpop                                                            | Receives messages sent to all available staff. | nucleus.helpop.receive |
 | /mute [user] {duration} [reason],<br>/unmute [user]                | Mutes [user] for {duration} because of [reason]. The {duration} could be "1h" for one hour, "2d" for two days, etc.<br>Unmutes [user]. | nucleus.mute.base,<br>*nucleus.mute.notify*,<br>nucleus.mute.unmute |
 | /note [user] [text]                                                | Adds a note with [text] to [user] which is readable by all staff. | nucleus.note.base,<br>*nucleus.note.notify*,<br>*nucleus.note.showonlogin* |
 | /sc [message]                                                      | Sends [message] to the *currently broken* staff chat. | nucleus.staffchat.base |
@@ -115,6 +117,15 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /teleport [user],<br>/teleport [user1] [user2],<br>/teleport [xyz] | Teleports the executing player to [user], [user1] to [user2] or the executing player to [xyz]. | minecraft.command.tp |
 | /warn [user] {duration} [reason]                                   | Warns [user] for {duration} because of [reason]. The {duration} could be "7d" for one week, or left blank for unlimited. | nucleus.warn.base,<br>*nucleus.warn.notify*,<br>*nucleus.warn.showonlogin* |
 |                                                                    | | weight.40 |
+
+*Duration note:*
+*1s = 1 second*
+*1m = 1 minute*
+*1h = 1 hour*
+*1d = 1 day*
+
+*/mute NiceGuy 1h harrassment*
+"Muted NiceGuy for 1 hour for harrassment"
 
 ## Trial-Mod
 **Task:** Testing the waters to see if becoming a Moderator is a good idea. Help players, solve more difficult problems (above Helper but not serious enough to bring in Admins).
@@ -142,11 +153,14 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /back                               | Teleports back to previous location. | nucleus.back.base,<br>*nucleus.back.targets.** |
 | /gamemode 0,<br>/gamemode 3         | Changes the executing player's gamemode. | nucleus.gamemode.base,<br>*nucleus.gamemode.modes.spectator*,<br>*nucleus.gamemode.modes.survival* |
 | /getfromip [ip]                     | Lists all known players ever connected via [ip]. | nucleus.getfromip.base |
+| /removewarning [user] [id]          | Removes the warning with [id] from [user]. | nucleus.removewarning.base |
 | */seen [user]*                      | Displays information about [user], such as last seen playing, etc. Grants Mod+ even more information. | nucleus.seen.extended.* |
 | /tempban [user] [duration] [reason] | Bans [user] for [duration] because of [reason]. The [duration] could be "1h" for one hour, "2d" for two days, etc. | nucleus.tempban.base,<br>*nucleus.tempban.offline*,<br>*nucleus.ban.notify* |
 | /thru                               | Teleports the executing player through a wall. Useful for /vanish. | nucleus.thru.base |
 | /vanish                             | Toggles whether the executing player is visible to other players. | nucleus.vanish.base |
 |                                     | | weight.60 |
+
+Moderators must document bans with detail, consult Head-Mod+ for instructions.
 
 ## Head-Mod
 **Task:** Lead and coordinate the moderation. Mentor Trial-Mods and Helpers.
@@ -161,7 +175,6 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /kickall {reason}                              | Kicks all users because of {reason} from the server. | nucleus.kickall.base |
 | /nameban [name] {reason},<br>/nameunban [name] | Bans all users with [name] in their or as their username for {reason}.<br>Unbans all users with [name] in their or as their username. | nucleus.nameban.base,<br>nucleus.nameban.unban.base |
 | /removenote [user] [id]                        | Removes the note with [id] from [user]. | nucleus.removenote.base |
-| /removewarning [user] [id]                     | Removes the warning with [id] from [user]. | nucleus.removewarning.base |
 | /unban [user]                                  | Unbans [user]. | nucleus.unban.base |
 |                                                | | weight.70 |
 
