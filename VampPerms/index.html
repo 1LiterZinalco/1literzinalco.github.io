@@ -16,7 +16,7 @@ Then rewritten by 1LiterZinalco
 - If you're offline for a few days it won't be a reason for us to just remove you from staff, even while you're on any kind of trial. Of course, if it's like a week or a month without any further information we would probably remove you from staff and give you the option to reapply once you're able to commit more time. So, please announce in advance that you are going on vacation or missing out on other reasons.
 
 # Current Staff List
-*Updated 25 February 2020*
+*Updated 25 March, 2020*
 
 | Rank                         | Ingame          | Discord              | Discord UUID         |
 | :--------------------------- | :-------------- | :------------------- | :------------------- |
@@ -29,9 +29,7 @@ Then rewritten by 1LiterZinalco
 | Mod                          | Teri_Berry      | Teri_Berry#6815      | 647964618349608983   |
 | Mod                          | XxTomasVxX      | Tomás Valle#1051     | 320569757529276417   |
 | Helper                       | ElectricEvader  | ElectricEvader#3564  | 531969884964257793   |
-| Helper                       | Icyflame191     | IcyShadow191#3555    | 208761818263322624   |
-| Helper                       | ItsCorgi        | Corgi#3564           | 446771909724602368   |
-| Helper                       | JaberC          | JaberC#1020          | 406349178344701952   |
+| Helper                       | IcyFlame191     | IcyShadow191#3555    | 208761818263322624   |
 | Helper                       | Pizzacat4       | Pizzacat4#0216       | 599344040051212298   |
 | Helper                       | S_olace         | S_olace#3014         | 306989884323790850   |
 
@@ -62,7 +60,7 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /getpos                                 | Gets the location of the executing player. | nucleus.getpos.base |
 | /home [{name}],<br>/deletehome [{name}] | A home is a personal warp. The standard [{name}] is 'home'. /home [{name}] teleports to the home called [{name}].<br>/deletehome [{name}] deletes the home called [{name}]. | nucleus.home.base |
 | /homes                                  | Lists all homes of the executing player. | nucleus.home.list.base |
-| /sethome [{name}]                       | Sets a new home called [{name}]. The standard [{name}] is 'home'. | nucleus.home.set.base |
+| /home set [{name}]                       | Sets a new home called [{name}]. The standard [{name}] is 'home'. | nucleus.home.set.base |
 | /ignore [user]                          | Toggles ignoring [user]'s messages. | nucleus.ignore.base |
 | /ignorelist                             | Displays all ignored users. | nucleus.ignorelist.base |
 | /info                                   | Displays server information. | nucleus.info.base |
@@ -101,6 +99,8 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 
 -->
 
+For Claiming commands, <a href="claim/index.html" target="_self">click here</a>.
+
 ## Helper
 **Task:** Help people with the mod and the different plugins. Solve small problems. Manage chat. Report to Trial-Mod+ if a bigger issue arises.
 
@@ -119,14 +119,14 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /warn [user] {duration} [reason]                                   | Warns [user] for {duration} because of [reason]. The {duration} could be "7d" for one week, or left blank for unlimited. | nucleus.warn.base,<br>*nucleus.warn.notify*,<br>*nucleus.warn.showonlogin* |
 |                                                                    | | weight.40 |
 
-*Duration note:*
-*1s = 1 second*
-*1m = 1 minute*
-*1h = 1 hour*
-*1d = 1 day*
+**Duration note:**<br>
+<code>1s</code> = *1 second*<br>
+<code>1m</code> = *1 minute*<br>
+<code>1h</code> = *1 hour*<br>
+<code>1d</code> = *1 day*<br><br>
 
-*/mute NiceGuy 1h harrassment*
-"Muted NiceGuy for 1 hour for harrassment"
+<samp>/mute NiceGuy 1h harrassment<samp><br>
+*"Muted NiceGuy for 1 hour for harrassment"*
 
 ## Trial-Mod
 **Task:** Testing the waters to see if becoming a Moderator is a good idea. Help players, solve more difficult problems (above Helper but not serious enough to bring in Admins).
@@ -152,13 +152,16 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | :---------------------------------- | :------------- | :------------- |
 |                                     | Grants the use of Minecraft's color codes and text styles on signs. | nucleus.sign.formatting |
 | /back                               | Teleports back to previous location. | nucleus.back.base,<br>*nucleus.back.targets.** |
+| /fly                                | Toggle flying. | nucleus.fly.base |
 | /gamemode 0,<br>/gamemode 3         | Changes the executing player's gamemode. | nucleus.gamemode.base,<br>*nucleus.gamemode.modes.spectator*,<br>*nucleus.gamemode.modes.survival* |
 | /getfromip [ip]                     | Lists all known players ever connected via [ip]. | nucleus.getfromip.base |
+| /removenote [user] [id]             | Removes the note with [id] from [user]. | nucleus.removenote.base |
 | /removewarning [user] [id]          | Removes the warning with [id] from [user]. | nucleus.removewarning.base |
 | */seen [user]*                      | Displays information about [user], such as last seen playing, etc. Grants Mod+ even more information. | nucleus.seen.extended.* |
 | /tempban [user] [duration] [reason] | Bans [user] for [duration] because of [reason]. The [duration] could be "1h" for one hour, "2d" for two days, etc. | nucleus.tempban.base,<br>*nucleus.tempban.offline*,<br>*nucleus.ban.notify* |
 | /thru                               | Teleports the executing player through a wall. Useful for /vanish. | nucleus.thru.base |
 | /vanish                             | Toggles whether the executing player is visible to other players. | nucleus.vanish.base |
+| /warp [{user}] [warp]               | Forcely teleports the [{user}] to a [warp]. | nucleus.warp.others |
 |                                     | | weight.60 |
 
 Moderators must document bans with detail, consult Head-Mod+ for instructions.
@@ -170,12 +173,13 @@ Moderators must document bans with detail, consult Head-Mod+ for instructions.
 | :--------------------------------------------- | :------------- | :------------- |
 |                                                | Head-Mod+ can't be kicked. | nucleus.kick.exempt.target |
 |                                                | Head-Mod+ can't be banned. | nucleus.ban.exempt.target,<br>*nucleus.tempban.exempt.target* |
-|                                                | Grants the user to use Griefprevention's admin features. | griefprevention.admin |
+| /ignoreClaims,<br>/adminClaims                 | Grants the user to use Griefprevention's admin features. | griefprevention.admin |
 | /ban [user] [reason]                           | Bans [user] because of [reason]. | nucleus.ban.base,<br>*nucleus.ban.offline* |
+| /broadcast [message]                           | Send a broadcast to all players in public chat.| nucleus.broadcast.base |
+| /enderchest [user]                             | Opens a [user]'s enderchest. | nucleus.enderchest.* |
 | /invsee [user]                                 | Displays and allows modification of [user]'s inventory. | nucleus.invsee.modify |
 | /kickall {reason}                              | Kicks all users because of {reason} from the server. | nucleus.kickall.base |
 | /nameban [name] {reason},<br>/nameunban [name] | Bans all users with [name] in their or as their username for {reason}.<br>Unbans all users with [name] in their or as their username. | nucleus.nameban.base,<br>nucleus.nameban.unban.base |
-| /removenote [user] [id]                        | Removes the note with [id] from [user]. | nucleus.removenote.base |
 | /unban [user]                                  | Unbans [user]. | nucleus.unban.base |
 |                                                | | weight.70 |
 
