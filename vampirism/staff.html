@@ -24,7 +24,7 @@ You should...
 - We sometimes need to work with - or talk about - personal data of the players. This can be their Dicord account, email address, entire chat histories or other information. Anything you know because you're staff, regardless of how exactly you found out, stays inside staff. By leaking any personal data you violate the General Data Protection Regulation (GDPR/DSGVO) and make yourself punishable by laws in real life.
 
 # Current Staff List
-*Updated June 17th, 2020*
+*Updated July 8th, 2020*
 
 | Rank                         | Ingame          | Discord              | Discord UUID       |
 | :--------------------------- | :-------------- | :------------------- | :----------------- |
@@ -34,12 +34,14 @@ You should...
 | *Admin (Former maintainer)*  | *WurstKorn*     | *WurstKorn#6773*     | 227086479355150336 |
 | Admin                        | xXvPendragonvXx | xXvPendragonvXx#1255 | 270258305346043905 |
 | Head-Mod                     | Teri_Berry      | Teri_Berry#6815      | 647964618349608983 |
-| Trail-Mod                    | cournualllama2  | cournualllama2#0278  | 599843402070360064 |
-| Trail-Mod                    | ElectricEvader  | ElectricEvader#3564  | 531969884964257793 |
-| Trail-Mod                    | F_Spade         | ♤SpadeIsACard♤#7417  | 272847951213101067 |
-| Trail-Mod                    | Pizzacat4       | Pizzacat4#0216       | 599344040051212298 |
-| Helper                       | S_olace         | S_olace#3014         | 306989884323790850 |
+| Mod                          | cournualllama2  | cournualllama2#0278  | 599843402070360064 |
+| Mod                          | ElectricEvader  | ElectricEvader#3564  | 531969884964257793 |
+| Mod                          | F_Spade         | ♤SpadeIsACard♤#7417  | 272847951213101067 |
+| Mod                          | Pizzacat4       | Pizzacat4#0216       | 599344040051212298 |
+| Trial-Mod                    | S_olace         | S_olace#3014         | 306989884323790850 |
 | Helper                       | God_Seth_Big    | special krab#4336    | 335510743271211009 |
+| Helper                       | LilCatGod       | Not A Hacker#0785    | 561901791030149130 |
+
 
 # Standard Punishments
 
@@ -123,12 +125,7 @@ Arguments written in [ ] are needed always, [{ }] is needed sometimes and { } is
 | /vampirism eye [0-14]                   | Changes eye appearance to [0-14]. | vampirism.eye |
 | /vampirism fang [0-5]                   | Changes fang appearance to [0-5]. | vampirism.fang |
 |                                         | | weight.0 |
-<!-- Deactiveated Commands
 
-| /afk                                    | Toggles the player's AFK state. | nucleus.afk.base |
-| /kit Claim                              | Redeems the "Claim" kit. | nucleus.kits.Claim |
-
--->
 
 For Claiming commands, <a href="claim/index.html" target="_self">click here</a>.
 
@@ -138,6 +135,7 @@ For Claiming commands, <a href="claim/index.html" target="_self">click here</a>.
 | Command                                                            | Explanation    | Node           |
 | :----------------------------------------------------------------- | :------------- | :------------- |
 |                                                                    | Helper+ can't be ignored by users. | *nucleus.ignore.exempt.chat* |
+| /afk                                                               | Toggles the player's AFK state. | nucleus.afk.base |
 | /checkmute [user]                                                  | Checks if [user] is muted. | nucleus.checkmute.base |
 | /checkmuted                                                        | Displays a list of all muted players. | nucleus.checkmuted.base |
 | /checknotes [user]                                                 | Displays a list of [user]'s notes. | nucleus.checknotes.base |
@@ -184,7 +182,6 @@ For Claiming commands, <a href="claim/index.html" target="_self">click here</a>.
 |                                     | Grants the use of Minecraft's color codes and text styles on signs. | nucleus.sign.formatting |
 | /ban [user] [reason]                | Bans [user] because of [reason]. | nucleus.ban.base,<br>*nucleus.ban.offline* |
 | /back                               | Teleports back to previous location. | nucleus.back.base,<br>*nucleus.back.targets.** |
-| /fly                                | Toggle flying. | nucleus.fly.base |
 | /gamemode 0,<br>/gamemode 3         | Changes the executing player's gamemode. | nucleus.gamemode.base,<br>*nucleus.gamemode.modes.spectator*,<br>*nucleus.gamemode.modes.survival* |
 | /getfromip [ip]                     | Lists all known players ever connected via [ip]. | nucleus.getfromip.base |
 | /removenote [user] [id]             | Removes the note with [id] from [user]. | nucleus.removenote.base |
@@ -206,6 +203,7 @@ Moderators must document bans with detail, consult Head-Mod+ for instructions.
 | :--------------------------------------------- | :------------- | :------------- |
 |                                                | Head-Mod+ can't be kicked. | nucleus.kick.exempt.target |
 |                                                | Head-Mod+ can't be banned. | nucleus.ban.exempt.target,<br>*nucleus.tempban.exempt.target* |
+| /fly                                           | Toggle flying. | nucleus.fly.base |
 | /ignoreClaims,<br>/adminClaims                 | Grants the user to use Griefprevention's admin features. | griefprevention.admin |
 | /broadcast [message]                           | Send a broadcast to all players in public chat.| nucleus.broadcast.base |
 | /enderchest [user]                             | Opens a [user]'s enderchest. | nucleus.enderchest.* |
